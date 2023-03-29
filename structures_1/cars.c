@@ -1,6 +1,4 @@
 #include <stdio.h>
-#define getName(var)  #var
-
 struct carInstance {
 	int maxSpeed;
 	int maxRPM;
@@ -8,7 +6,7 @@ struct carInstance {
 	int horsepower;
 	int numberOfGears;
 };
-
+// Returns the index of the largest integer of three.
 int indexOfTheBest(int a, int b, int c) {
 	if (a > b && a > c) {
 		return 1;
@@ -20,7 +18,7 @@ int indexOfTheBest(int a, int b, int c) {
 		return 3;
 	}
 	else {
-		return 0;
+		return -1;
 	}
 }
 
